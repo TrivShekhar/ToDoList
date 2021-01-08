@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body >
+    
+    <h1 id="Name">To-Do List</h1>
+    <div id="addNew">
+            <input id="inputfield"  type="text">
+            <button id="submitbutton"  onclick="generateListItem()"><strong>Add Item</strong></button>
+    </div>
+            
+    <div id="listContainer">
+        <p id="emptyCase">Nothing Todo!</p>
+    <div id="toDoList"></div>
+    </div>
+    <div id="modalContainer">
+    <div id="modal">
+        
+        <span id="modalClose">&times;</span>
+        <div id ="modalDiv">        
+        <input id="editInput"  type="text">
+        <button id="submitEdit"><strong>Edit Item</strong></button>
+    </div>
+    </div>
+    </div>
+    <script src="Js/Controler.js"></script>
+    <link rel="stylesheet" href="Css/Styles.css">
+    
+</body>
+</html>

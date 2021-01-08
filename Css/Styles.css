@@ -1,0 +1,245 @@
+html, body{
+position: relative;
+margin: 0;
+height: 100%;
+width: 100%;
+}
+
+body{
+    background:linear-gradient(-45deg, blue, rgb(230, 0, 0));
+    background-size: 400% 400%;
+    display: grid;
+    width: 100%;
+    animation: gradientBg 15s ease infinite;
+}
+
+#addNew {
+    position: relative;
+    text-align: center;
+}
+
+
+#inputfield{
+    width: 60%;
+    height: 40px;
+    padding: 2px;
+    border-color:transparent;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    font-size: large;
+    text-indent: 20px;
+    border-radius: 30px;
+}
+
+#submitbutton{
+    text-align: center;
+    border-color:transparent;
+    background-color: honeydew;
+    outline: none;
+    font-style:normal;
+    font-size: medium;
+    -webkit-tap-highlight-color: transparent;
+    width: 17%;
+    height: 47.5px;
+    vertical-align: middle;
+    border-radius: 30px;
+}
+#Name{
+    text-align: center;
+    color: blanchedalmond;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#listContainer{
+    position: relative;
+    width: 60%;
+    display: flex;
+    height: auto;
+    place-self: center;
+    flex-direction: column;
+    place-items: center; 
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    min-height: 500px;
+    padding: 20px;
+    background-color:gainsboro;
+    border-radius: 10px;
+
+}
+#toDoList{
+  display: flex;
+  justify-self: flex-start;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+#emptyCase{
+    place-self: center;
+    display: blox;
+    z-index: 2px;
+    color: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.listDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.ToDoList{
+    position: relative;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: auto;
+    min-height: 35px;
+    background-color: aliceblue;
+    border-color:transparent;
+    text-align: left;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    font-size: large;
+    text-indent: 20px;
+    border-radius: 10px;
+}
+
+#modalContainer{
+    position: fixed;
+    display: none;
+    z-index: 2px;
+    justify-content: center;
+    place-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0,0,0,0.4);
+}
+
+#modal{
+    display: flex;
+    position: fixed;
+    z-index: 2px;
+    flex-direction: column;
+    background-color: rgb(158, 226, 238);
+    margin-top:100px;
+    border-radius: 30px;
+    width: 50%;
+    height: 150px;
+}
+
+#modalDiv{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    place-self: center;
+    width: 100%;
+}
+
+#editInput{
+    width: 60%;
+    height: 40px;
+    padding: 2px;
+    border-color:transparent;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    font-size: large;
+    text-indent: 20px;
+    border-radius: 30px;
+}
+
+#submitEdit{
+    text-align: center;
+    border-color:transparent;
+    background-color: honeydew;
+    outline: none;
+    font-style:normal;
+    font-size: medium;
+    -webkit-tap-highlight-color: transparent;
+    width: 17%;
+    height: 47.5px;
+    vertical-align: middle;
+    border-radius: 30px;
+}
+
+#modalClose{
+    margin-left: 95%;    
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bolder;
+    color:black;
+}
+
+#modalClose:hover,
+#modalClose:focus{
+    color:red;
+    cursor: pointer;
+}
+
+.delete{    
+    text-align: center;
+    border-color:transparent;
+    background-color: rgb(219, 40, 40);
+    outline: none;
+    color: white;
+    font-style:normal;
+    -webkit-tap-highlight-color: transparent;
+    width: 17%;
+    height: 35px;
+    vertical-align: middle;
+    border-radius: 30px;
+}
+
+
+.edit{
+    text-align: center;
+    border-color:transparent;
+    background-color:rgb(15, 175, 238);
+    outline: none;
+    color: white;
+    font-style:normal;
+    -webkit-tap-highlight-color: transparent;
+    width: 17%;
+    height: 35px;
+    vertical-align: middle;
+    border-radius: 30px;
+}
+
+.markDone{
+    
+    text-align: center;
+    border-color:transparent;
+    background-color:rgb(15, 238, 26);
+    outline: none;
+    color: white;
+    font-style:normal;
+    -webkit-tap-highlight-color: transparent;
+    width: 17%;
+    height: 35px;
+    vertical-align: middle;
+    border-radius: 30px;
+
+}
+
+@keyframes gradientBg{
+    0%{
+        background-position: 0% 50%;
+    }
+    
+    50%{
+        background-position: 100% 50%;
+    }
+    
+    100%{
+        background-position: 0% 50%;
+    }
+}
